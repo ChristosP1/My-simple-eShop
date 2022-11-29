@@ -134,10 +134,22 @@ public class Shop {
 	public static void addProduct() {
 		System.out.println("--- TEST ADD PRODUCT ---");
 		System.out.println("\n\nYou entered the adding process!\n");
+		
 		System.out.println("-Name: ");
+		String name = scan.nextLine();
+		
+		
 		System.out.println("-Price: ");
+		double price = scan.nextDouble();
+		
 		System.out.println("-Description: ");
-		System.out.println("-Nuber of items: ");
+		String description = scan.nextLine();
+		scan.next();
+		
+		System.out.println("-Stock: ");
+		int stock = scan.nextInt();
+		
+		products.add(new Product(name,price,description,stock));
 		
 	}
 	
